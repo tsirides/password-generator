@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  width: 550px;
+  height: 550px;
+  background-color: #1f2937;
+  font-family: "Karla", sans-serif;
+  letter-spacing: -1px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.generator {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.password {
+  background: #273549;
+
+  width: 100%;
+  height: 40px;
+  display: flex;
+  color: #55f991;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  border: 1px solid #2f3e53;
+}
+#pass-length,
+#pass-length-label {
+  width: 100%;
+}
+.passLength {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+.passStyle {
+  padding: 20px;
+}
+.copy {
+  display: flex;
+  background-color: #2d3b4e;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  border: none;
+  color: white;
+  height: 100%;
+  transition: 0.3s ease;
+}
+.copy:hover {
+  background: #40536e;
+}
+.heading {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  margin: 0;
+}
+.tagline {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0;
+  color: #d5d4d8;
+}
+.generateBtn {
+  width: fit-content;
+  background-color: #10b981;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 16px;
+  color: white;
+  transition: 0.3s ease;
+}
+.generateBtn:hover {
+  background-color: #16da98;
+}
+.passwords {
+  display: flex;
+  width: 100%;
+  padding-block: 35px;
+  border-top: 1px solid #2f3e53;
+  gap: 12px;
+}
+
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 15rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #2f3e53;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: 0px; /* Centers thumb on the track */
+
+  /*custom styles*/
+  background-color: #16da98;
+  height: 0.5rem;
+  border-radius: 100px;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  border: 1px solid #55f991;
+  outline-offset: 0.125rem;
+}
+
+/******** Firefox styles ********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #053a5f;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+
+  /*custom styles*/
+  background-color: #5cd5eb;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+  outline-offset: 0.125rem;
+}
