@@ -1,20 +1,24 @@
 body {
   margin: 0;
-  width: 550px;
-  height: 550px;
-  background-color: #1f2937;
+  background-color: #17212e;
   font-family: "Karla", sans-serif;
   letter-spacing: -1px;
   color: white;
   display: flex;
   flex-direction: column;
   gap: 50px;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
 }
 .generator {
   padding: 24px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 35px;
+  background: #1f2937;
+  border-radius: 12px;
 }
 .password {
   background: #273549;
